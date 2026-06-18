@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\imgui\imconfig-SFML.h" />
+    <ClInclude Include="include\imgui\imconfig.h" />
+    <ClInclude Include="include\imgui\imgui-SFML.h" />
+    <ClInclude Include="include\imgui\imgui-SFML_export.h" />
+    <ClInclude Include="include\imgui\imgui.h" />
+    <ClInclude Include="include\imgui\imgui_internal.h" />
+    <ClInclude Include="include\imgui\imstb_rectpack.h" />
+    <ClInclude Include="include\imgui\imstb_textedit.h" />
+    <ClInclude Include="include\imgui\imstb_truetype.h" />
+    <ClInclude Include="include\portable-file-dialogs.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\Screen\Data\Render_Data.hpp" />
+    <ClInclude Include="src\Screen\GUI\GUI_main.hpp" />
+    <ClInclude Include="src\Screen\GUI\Menu_Bar\Background.hpp" />
+    <ClInclude Include="src\Screen\GUI\Menu_Bar\Camera.hpp" />
+    <ClInclude Include="src\Screen\GUI\Menu_Bar\Edit.hpp" />
+    <ClInclude Include="src\Screen\GUI\Menu_Bar\File.hpp" />
+    <ClInclude Include="src\Screen\GUI\Menu_Bar\Lighting.hpp" />
+    <ClInclude Include="src\Screen\GUI\Menu_Bar\View_Mode.hpp" />
+    <ClInclude Include="src\Screen\View_Mode\Rendered.hpp" />
+    <ClInclude Include="src\Screen\View_Mode\Solid.hpp" />
+    <ClInclude Include="src\Screen\View_Mode\Texture.hpp" />
+    <ClInclude Include="src\Screen\View_Mode\Wireframe.hpp" />
+    <ClInclude Include="src\World\Camera.hpp" />
+    <ClInclude Include="src\config.hpp" />
+    <ClInclude Include="src\Control\View_Control.hpp" />
+    <ClInclude Include="src\Math\mat4x4.hpp" />
+    <ClInclude Include="src\Math\vec4.hpp" />
+    <ClInclude Include="src\Object\Mesh_Data.hpp" />
+    <ClInclude Include="src\Control\Object_transform.hpp" />
+    <ClInclude Include="src\Screen\Draw_Triangles.hpp" />
+    <ClInclude Include="src\Screen\Screen_Render.hpp" />
+    <ClInclude Include="src\Screen\Main_Cycle.hpp" />
+    <ClInclude Include="src\World\Lighting.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\imgui\imgui-SFML.cpp" />
+    <ClCompile Include="include\imgui\imgui.cpp" />
+    <ClCompile Include="include\imgui\imgui_demo.cpp" />
+    <ClCompile Include="include\imgui\imgui_draw.cpp" />
+    <ClCompile Include="include\imgui\imgui_tables.cpp" />
+    <ClCompile Include="include\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="src\Control\View_Control.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Control\Object_transform.cpp" />
+    <ClCompile Include="src\Object\Import.cpp" />
+    <ClCompile Include="src\Screen\Draw_Triangles.cpp" />
+    <ClCompile Include="src\Screen\GUI\GUI_main.cpp" />
+    <ClCompile Include="src\Screen\GUI\Menu_Bar\Background.cpp" />
+    <ClCompile Include="src\Screen\GUI\Menu_Bar\Camera.cpp" />
+    <ClCompile Include="src\Screen\GUI\Menu_Bar\Edit.cpp" />
+    <ClCompile Include="src\Screen\GUI\Menu_Bar\File.cpp" />
+    <ClCompile Include="src\Screen\GUI\Menu_Bar\Lighting.cpp" />
+    <ClCompile Include="src\Screen\GUI\Menu_Bar\View_Mode.cpp" />
+    <ClCompile Include="src\Screen\View_Mode\Rendered.cpp" />
+    <ClCompile Include="src\Screen\View_Mode\Solid.cpp" />
+    <ClCompile Include="src\Screen\View_Mode\Texture.cpp" />
+    <ClCompile Include="src\Screen\Screen_Render.cpp" />
+    <ClCompile Include="src\Screen\Main_Cycle.cpp" />
+    <ClCompile Include="src\Screen\View_Mode\Wireframe.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CppProperties.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="data\icon.ico" />
+    <Image Include="data\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="3D_Engine.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b705ce72-10b0-47f1-ae83-3e664c79041a}</ProjectGuid>
+    <RootNamespace>_3D_Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\SFML-2.6.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-network-s-d.lib;sfml-audio-s-d.lib;sfml-graphics-s-d.lib;opengl32.lib;openal32.lib;ws2_32.lib;winmm.lib;ogg.lib;vorbis.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;freetype.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\imgui;$(SolutionDir)include\SFML-2.6.1\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;sfml-audio-s.lib;sfml-network-s.lib;opengl32.lib;openal32.lib;ws2_32.lib;winmm.lib;ogg.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;flac.lib;freetype.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)include\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
