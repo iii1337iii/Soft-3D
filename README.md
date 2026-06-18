@@ -44,6 +44,10 @@ To run the application standalone, ensure your output directory structure looks 
 └── data/            # Engine configuration and runtime resources
 ```
 
+### Performance Tuning (Tile Size):
+Includes a `Tile Size` slider in the settings. **Note:** Lowering this value increases the CPU workload exponentially (Default standard is `512`).
+
+
 ### Controls & Shortcuts
 Apart from the graphical user interface, the engine supports comprehensive keyboard and mouse binds for fluid scene editing:
 
